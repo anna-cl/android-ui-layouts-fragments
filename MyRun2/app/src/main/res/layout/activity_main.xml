@@ -48,13 +48,4 @@
         android:layout_margin="30dp"
         android:layout_gravity="center_vertical|center_horizontal"
         android:onClick="startButtonClicked"/>
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="listview"
-        android:onClick="onListViewLayoutClicked"/>
-
-
 </LinearLayout>

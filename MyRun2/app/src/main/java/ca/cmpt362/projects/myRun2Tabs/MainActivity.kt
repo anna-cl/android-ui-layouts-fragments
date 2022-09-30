@@ -23,10 +23,4 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "fill out the form", Toast.LENGTH_SHORT).show()
     }
 
-    fun onListViewLayoutClicked(v: View) {
-        val intent = Intent(this, ListViewLayoutActivity::class.java)
-        startActivity(intent)
-    }
-
-
 }

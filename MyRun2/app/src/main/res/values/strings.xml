@@ -31,6 +31,8 @@
     <string name="startButton">Start</string>
 
     <!-- START ACTIVITY   -->
+    <string name="save_start">SAVE</string>
+    <string name="cancel_start">CANCEL</string>
 <!--    <string name="dateText">Date</string>-->
 <!--    <string name="timeText">Time</string>-->
 <!--    <string name="durationText">Duration</string>-->
