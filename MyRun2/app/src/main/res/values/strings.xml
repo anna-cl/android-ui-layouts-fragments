@@ -33,13 +33,7 @@
     <!-- START ACTIVITY   -->
     <string name="save_start">SAVE</string>
     <string name="cancel_start">CANCEL</string>
-<!--    <string name="dateText">Date</string>-->
-<!--    <string name="timeText">Time</string>-->
-<!--    <string name="durationText">Duration</string>-->
-<!--    <string name="distanceText">Distance</string>-->
-<!--    <string name="caloriesText">Calorie</string>-->
-<!--    <string name="heartText">Heart Rate</string>-->
-<!--    <string name="commentText">Comment</string>-->
+    <string name="comment_hint">How did it go? Notes here.</string>
 
 
 
