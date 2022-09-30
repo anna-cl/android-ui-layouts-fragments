@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">My Run2 Tabs</string>
+
+    <!-- START TAB   -->
+    <string name="textView_inputType">Input Type</string>
+
+    <string-array name="inputType_spinner_entries">
+        <item>Manual Entry</item>
+        <item>GPS</item>
+        <item>Automatic</item>
+    </string-array>
+
+    <string name="textView_activityType">Activity Type</string>
+
+    <string-array name="activityType_spinner_entries">
+        <item>Running</item>
+        <item>Walking</item>
+        <item>Standing</item>
+        <item>Cycling</item>
+        <item>Hiking</item>
+        <item>Downhill Skiing</item>
+        <item>Cross-Crountry Skiing</item>
+        <item>Snowboarding</item>
+        <item>Skating</item>
+        <item>Swimming</item>
+        <item>Mountain Biking</item>
+        <item>Wheelchair</item>
+        <item>Elliptical</item>
+    </string-array>
+    
+    <string name="startButton">Start</string>
+
+    <!-- START ACTIVITY   -->
+<!--    <string name="dateText">Date</string>-->
+<!--    <string name="timeText">Time</string>-->
+<!--    <string name="durationText">Duration</string>-->
+<!--    <string name="distanceText">Distance</string>-->
+<!--    <string name="caloriesText">Calorie</string>-->
+<!--    <string name="heartText">Heart Rate</string>-->
+<!--    <string name="commentText">Comment</string>-->
+
+
+
+
+</resources>
