@@ -27,11 +27,19 @@ class StartManualActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start_manual)
 
+<<<<<<< Updated upstream
         listAdapterView()
 
     }
 
     private fun listAdapterView(){
+=======
+        manualListAdapterView() //display || date,time,duration,distance,calories,heartrate,comment ||
+
+    }
+
+    private fun manualListAdapterView(){
+>>>>>>> Stashed changes
         //display list view with list adapter:
         listView = findViewById(R.id.listView_startActivity)
 

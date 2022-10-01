@@ -19,7 +19,13 @@
         <entry key="app/src/main/res/layout/comment_dialog_box.xml" value="0.22" />
         <entry key="app/src/main/res/layout/distance_dialog_box.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/duration_dialog_box.xml" value="0.25" />
+<<<<<<< Updated upstream
         <entry key="app/src/main/res/layout/fragment_start.xml" value="0.3333333333333333" />
+=======
+        <entry key="app/src/main/res/layout/fragment_history.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/fragment_start.xml" value="0.25" />
+>>>>>>> Stashed changes
         <entry key="app/src/main/res/layout/heartrate_dialog_box.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3375" />
       </map>

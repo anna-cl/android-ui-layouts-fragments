@@ -1,6 +1,62 @@
+<<<<<<< Updated upstream
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Under start tab - fragment start  -->
+
+    <TextView
+        android:id="@+id/textView_inputType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_inputType"
+        android:layout_margin="5dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_inputType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/inputType_spinner_entries"
+        android:layout_margin="5dp">
+    </Spinner>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/textView_activityType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_activityType"
+        android:layout_margin="5dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_activityType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/activityType_spinner_entries"
+        android:layout_margin="5dp">
+    </Spinner>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_margin="30dp"
+        android:onClick="startButtonClicked"
+        android:text="@string/startButton" />
+
+</LinearLayout>
+>>>>>>> Stashed changes

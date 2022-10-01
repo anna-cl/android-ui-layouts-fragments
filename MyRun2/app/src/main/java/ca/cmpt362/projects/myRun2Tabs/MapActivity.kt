@@ -8,4 +8,10 @@ class MapActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map)
     }
+<<<<<<< Updated upstream
+=======
+
+
+//    -----------TODO:  add save and cancel buttons:
+>>>>>>> Stashed changes
 }
