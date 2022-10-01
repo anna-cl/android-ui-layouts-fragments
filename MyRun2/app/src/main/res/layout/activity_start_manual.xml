@@ -7,33 +7,30 @@
         <ListView
             android:id="@+id/listView_startActivity"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="370dp"
             android:layout_margin="8dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="63dp"
+            android:gravity="bottom"
             android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/save_start"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="@string/save_start"
-                    android:layout_margin="8dp"/>
+                    android:text="@string/save_start" />
 
                 <Button
                     android:id="@+id/cancel_start"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="@string/cancel_start"
-                    android:layout_margin="8dp"/>
+                    android:text="@string/cancel_start" />
 
         </LinearLayout>
-
-
-
-
 </LinearLayout>

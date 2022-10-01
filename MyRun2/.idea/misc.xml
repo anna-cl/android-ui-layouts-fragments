@@ -12,11 +12,14 @@
         <entry key="app/src/main/res/layout/activity_display_msg.xml" value="0.15" />
         <entry key="app/src/main/res/layout/activity_list_view_layout.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_map.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_start.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_start_manual.xml" value="0.25" />
         <entry key="app/src/main/res/layout/calories_dialog_box.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/comment_dialog_box.xml" value="0.22" />
         <entry key="app/src/main/res/layout/distance_dialog_box.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/duration_dialog_box.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_start.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/heartrate_dialog_box.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3375" />
       </map>

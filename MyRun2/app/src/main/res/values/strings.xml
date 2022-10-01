@@ -27,15 +27,13 @@
         <item>Wheelchair</item>
         <item>Elliptical</item>
     </string-array>
-    
+
     <string name="startButton">Start</string>
 
-    <!-- START ACTIVITY   -->
+    <!-- START MANUAL ENTRY ACTIVITY   -->
     <string name="save_start">SAVE</string>
     <string name="cancel_start">CANCEL</string>
     <string name="comment_hint">How did it go? Notes here.</string>
-
-
 
 
 </resources>

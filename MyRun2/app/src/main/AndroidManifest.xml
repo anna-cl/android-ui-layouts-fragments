@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyRun2Tabs">
         <activity
-            android:name=".StartActivity"
+            android:name=".MapActivity"
+            android:exported="true" />
+        <activity
+            android:name=".StartManualActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

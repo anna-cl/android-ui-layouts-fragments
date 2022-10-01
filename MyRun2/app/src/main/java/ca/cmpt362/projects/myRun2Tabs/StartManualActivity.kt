@@ -9,7 +9,7 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 
-class StartActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener {
+class StartManualActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener {
     private val LISTITEMS = arrayOf(
         "Date",
         "Time",
@@ -25,7 +25,7 @@ class StartActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener, T
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_start)
+        setContentView(R.layout.activity_start_manual)
 
         listAdapterView()
 
@@ -94,8 +94,6 @@ class StartActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener, T
             textDialogBuilder.setView(durationDialogLayout)
             textDialogBuilder.setPositiveButton("OK") { dialogInterface, i -> //Toast.makeText(this, "Duration ${editText.getText().toString()}!", Toast.LENGTH_SHORT).show()
             }
-//            textDialogBuilder.setNegativeButton("Cancel") { dialogInterface, i -> }
-//            textDialogBuilder.show()
         } else if (position == 3) {
             textDialogBuilder.setTitle("Distance")
             val distanceDialogLayout = inflater.inflate(R.layout.duration_dialog_box, null)
@@ -103,8 +101,6 @@ class StartActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener, T
             textDialogBuilder.setView(distanceDialogLayout)
             textDialogBuilder.setPositiveButton("OK") { dialogInterface, i -> //save editText value
             }
-//            textDialogBuilder.setNegativeButton("Cancel") { dialogInterface, i -> }
-//            textDialogBuilder.show()
         }else if (position == 4){
             textDialogBuilder.setTitle("Calories")
             val distanceDialogLayout = inflater.inflate(R.layout.calories_dialog_box, null)
@@ -112,8 +108,6 @@ class StartActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener, T
             textDialogBuilder.setView(distanceDialogLayout)
             textDialogBuilder.setPositiveButton("OK") { dialogInterface, i -> //save editText value
             }
-//            textDialogBuilder.setNegativeButton("Cancel") { dialogInterface, i -> }
-//            textDialogBuilder.show()
         }else if (position == 5){
             textDialogBuilder.setTitle("Heart Rate")
             val distanceDialogLayout = inflater.inflate(R.layout.heartrate_dialog_box, null)
@@ -121,8 +115,6 @@ class StartActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener, T
             textDialogBuilder.setView(distanceDialogLayout)
             textDialogBuilder.setPositiveButton("OK") { dialogInterface, i -> //save editText value
             }
-//            textDialogBuilder.setNegativeButton("Cancel") { dialogInterface, i -> }
-//            textDialogBuilder.show()
         }else if (position == 6){
             textDialogBuilder.setTitle("Comment")
             val distanceDialogLayout = inflater.inflate(R.layout.comment_dialog_box, null)
@@ -130,11 +122,10 @@ class StartActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener, T
             textDialogBuilder.setView(distanceDialogLayout)
             textDialogBuilder.setPositiveButton("OK") { dialogInterface, i -> //save editText value
             }
-//            textDialogBuilder.setNegativeButton("Cancel") { dialogInterface, i -> }
-//            textDialogBuilder.show()
         }else{
             println("Wrong position!")
         }
+
         textDialogBuilder.setNegativeButton("Cancel") { dialogInterface, i -> }
         textDialogBuilder.show()
 
