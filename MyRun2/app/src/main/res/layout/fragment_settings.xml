@@ -15,33 +15,35 @@
     <ListView
         android:id="@+id/listView_settingsTop"
         android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_margin="8dp" />
+        android:layout_height="105dp"
+        android:layout_margin="5dp" />
 
     <TextView
         android:id="@+id/additional_set"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/additional_set"
-        android:layout_margin="8dp"/>
+        android:layout_margin="5dp"/>
 
     <ListView
         android:id="@+id/listView_settingsMid"
         android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_margin="8dp" />
+        android:layout_height="105dp"
+        android:layout_margin="5dp" />
 
     <TextView
         android:id="@+id/misc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/misc"
-        android:layout_margin="8dp"/>
+        android:layout_margin="5dp"/>
     <ListView
         android:id="@+id/listView_settingsBottom"
         android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_margin="8dp" />
+        android:layout_height="90dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"/>
 
 
 </LinearLayout>

@@ -2,6 +2,8 @@
 //Reference:
 //https://stackoverflow.com/questions/1957831/center-a-button-in-a-linear-layout
 //https://www.digitalocean.com/community/tutorials/android-alert-dialog-using-kotlin#9-alert-dialog-with-edit-text
+//https://www.youtube.com/watch?v=J5ZdR-vWlaw&t=800s&ab_channel=Howcang
+
 
 package ca.cmpt362.projects.myRun2Tabs
 
