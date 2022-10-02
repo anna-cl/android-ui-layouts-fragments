@@ -3,13 +3,14 @@ package ca.cmpt362.projects.myRun2Tabs
 import android.app.AlertDialog
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 
-class StartManualActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener {
+class ManualActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener {
     private val LISTITEMS = arrayOf(
         "Date",
         "Time",
@@ -25,21 +26,13 @@ class StartManualActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_start_manual)
+        setContentView(R.layout.activity_manual)
 
-<<<<<<< Updated upstream
-        listAdapterView()
-
-    }
-
-    private fun listAdapterView(){
-=======
         manualListAdapterView() //display || date,time,duration,distance,calories,heartrate,comment ||
 
     }
 
     private fun manualListAdapterView(){
->>>>>>> Stashed changes
         //display list view with list adapter:
         listView = findViewById(R.id.listView_startActivity)
 
@@ -53,7 +46,6 @@ class StartManualActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
                 dateClicked()
 
             }else if(position == 1){ //"Time" --> clock
-//                Toast.makeText(this, "CLOCK clicked! position $position", Toast.LENGTH_SHORT).show();
                 timeClicked()
             }else { //"Duration", "Distance", "Heart Rate", "Calories", "Comment" --> number,text input dialog boxes
                 otherDialogClicked(position)
@@ -138,4 +130,21 @@ class StartManualActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
         textDialogBuilder.show()
 
     }
+
+
+    fun saveButtonClickedManual(view: View){
+        var intent: Intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+
+        //TODO: save data---
+    }
+
+    fun cancelButtonClickedManual(view: View){
+        var intent: Intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
+
+
+
+
 }

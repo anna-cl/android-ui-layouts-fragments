@@ -36,4 +36,13 @@
     <string name="comment_hint">How did it go? Notes here.</string>
 
 
+    <!-- Map Activity   -->
+    <string name="map_title">Map</string>
+
+
+    <!--    SETTINGS Fragment -->
+    <string name="account_pref">Account Preference</string>
+    <string name="additional_set">Additional Settings</string>
+    <string name="misc">Misc.</string>
+
 </resources>

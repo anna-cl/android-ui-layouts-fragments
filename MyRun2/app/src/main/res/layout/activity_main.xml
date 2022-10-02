@@ -15,36 +15,7 @@
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-<<<<<<< Updated upstream
-        android:layout_height="20dp" />
-
-    <TextView
-        android:id="@+id/textView_activityType"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/textView_activityType"
-        android:layout_margin="5dp"/>
-
-    <Spinner
-        android:id="@+id/spinner_activityType"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/activityType_spinner_entries"
-        android:layout_margin="5dp">
-    </Spinner>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:layout_margin="30dp"
-        android:onClick="startButtonClicked"
-        android:text="@string/startButton" />
-</LinearLayout>
-=======
         android:layout_height="match_parent"
         android:layout_below="@+id/tab" />
 
 </RelativeLayout>
->>>>>>> Stashed changes

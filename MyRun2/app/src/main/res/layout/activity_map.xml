@@ -15,7 +15,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/save_start"
-            android:layout_margin="8dp"/>
+            android:layout_margin="8dp"
+            android:onClick="saveButtonClicked"/>
 
         <Button
             android:id="@+id/cancel_start"
@@ -23,6 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/cancel_start"
-            android:layout_margin="8dp"/>
+            android:layout_margin="8dp"
+            android:onClick="cancelButtonClicked"/>
     </LinearLayout>
 </LinearLayout>

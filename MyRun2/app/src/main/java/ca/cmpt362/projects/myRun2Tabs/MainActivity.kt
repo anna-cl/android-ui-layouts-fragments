@@ -7,16 +7,11 @@ package ca.cmpt362.projects.myRun2Tabs
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-<<<<<<< Updated upstream
-import android.view.View
-import android.widget.Spinner
-=======
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import java.util.ArrayList
->>>>>>> Stashed changes
 
 
 class MainActivity : AppCompatActivity() {
@@ -43,27 +38,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        setupFragmentsTabs()
+        setupFragmentsTabs()  //create and contain 3 fragments, 3 tabs for swiping
 
 
-<<<<<<< Updated upstream
-    private fun getSpinnerPosition(): Int {
-        val selectedItem: Spinner = findViewById(R.id.spinner_inputType)
-        return selectedItem.selectedItemPosition
-    }
-
-    fun startButtonClicked(view : View){
-        lateinit var intent:Intent
-        if (getSpinnerPosition()==0) { // spinner --> "Manual Entry"
-            intent = Intent(this, StartManualActivity::class.java)
-            startActivity(intent)
-        }else{
-            intent = Intent(this, MapActivity::class.java)
-            startActivity(intent)
-        }
-    }
-
-=======
     }
 
     private fun setupFragmentsTabs(){
@@ -111,5 +88,4 @@ class MainActivity : AppCompatActivity() {
         tabLayoutMediator.detach() // to free some memory when the app is killed
     }
 
->>>>>>> Stashed changes
 }
