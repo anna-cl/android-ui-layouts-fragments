@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">My Run2 Tabs</string>
+
+    <!-- START TAB   -->
+    <string name="textView_inputType">Input Type</string>
+
+    <string-array name="inputType_spinner_entries">
+        <item>Manual Entry</item>
+        <item>GPS</item>
+        <item>Automatic</item>
+    </string-array>
+
+    <string name="textView_activityType">Activity Type</string>
+
+    <string-array name="activityType_spinner_entries">
+        <item>Running</item>
+        <item>Walking</item>
+        <item>Standing</item>
+        <item>Cycling</item>
+        <item>Hiking</item>
+        <item>Downhill Skiing</item>
+        <item>Cross-Crountry Skiing</item>
+        <item>Snowboarding</item>
+        <item>Skating</item>
+        <item>Swimming</item>
+        <item>Mountain Biking</item>
+        <item>Wheelchair</item>
+        <item>Elliptical</item>
+    </string-array>
+
+    <string name="startButton">Start</string>
+
+    <!-- START MANUAL ENTRY ACTIVITY   -->
+    <string name="save_start">SAVE</string>
+    <string name="cancel_start">CANCEL</string>
+    <string name="comment_hint">How did it go? Notes here.</string>
+
+
+    <!-- Map Activity   -->
+    <string name="map_title">Map</string>
+
+
+    <!--    SETTINGS Fragment -->
+    <string name="account_pref">Account Preference</string>
+    <string name="additional_set">Additional Settings</string>
+    <string name="misc">Misc.</string>
+
+    <!--    Profile Form Activity -->
+    <string name="photo">photo</string>
+    <string name="button_change">Change</string>
+    <string name="user_name">Name:</string>
+    <string name="your_name">Your Name</string>
+    <string name="email">Email</string>
+    <string name="your_email">Your email</string>
+    <string name="phone">Phone</string>
+    <string name="your_phone">Your phone</string>
+    <string name="gender">Gender</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="othergen">Other</string>
+    <string name="class_year">Class</string>
+    <string name="your_class">e.g.2012</string>
+    <string name="major">Major</string>
+    <string name="your_major">e.g.Physics</string>
+    <string name="save_form">Save</string>
+    <string name="cancel_form">Cancel</string>
+
+</resources>
