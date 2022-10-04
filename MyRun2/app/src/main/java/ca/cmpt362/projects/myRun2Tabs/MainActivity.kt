@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity() {
 
         setupFragmentsTabs()  //create and contain 3 fragments, 3 tabs for swiping
 
-
     }
 
     private fun setupFragmentsTabs(){

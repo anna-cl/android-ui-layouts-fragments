@@ -10,13 +10,15 @@
         <entry key="app/src/main/res/drawable/ic_baseline_run_circle_24.xml" value="0.2203125" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.11851851851851852" />
         <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2203125" />
+        <entry key="app/src/main/res/drawable/profile_photo.xml" value="0.1671875" />
         <entry key="app/src/main/res/drawable/profile_photo_foreground.xml" value="0.17962962962962964" />
         <entry key="app/src/main/res/layout/activity_display_msg.xml" value="0.15" />
         <entry key="app/src/main/res/layout/activity_list_view_layout.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_manual.xml" value="0.28802083333333334" />
         <entry key="app/src/main/res/layout/activity_map.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_profile_form.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.165625" />
+        <entry key="app/src/main/res/layout/activity_profile_form.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_start.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_start_manual.xml" value="0.25" />
         <entry key="app/src/main/res/layout/calories_dialog_box.xml" value="0.19583333333333333" />

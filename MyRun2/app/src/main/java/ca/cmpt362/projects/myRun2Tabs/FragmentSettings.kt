@@ -1,13 +1,11 @@
 package ca.cmpt362.projects.myRun2Tabs
 
 import android.app.AlertDialog
-import android.content.DialogInterface
+import android.content.Context
 import android.content.Intent
-import android.graphics.Color
-import android.icu.text.Edits
+import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
-import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,6 +15,7 @@ import androidx.fragment.app.Fragment
 class FragmentSettings: Fragment() {
 
     private lateinit var intent:Intent
+    private val fileName = "MyRun2Data"
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -81,9 +80,9 @@ class FragmentSettings: Fragment() {
         //click on each item on the list:
         listViewTop.setOnItemClickListener() { parent: AdapterView<*>, view: View, position: Int, id: Long ->
             if (position == 0) { //user profile
-                Toast.makeText(activity, " open profile form $position", Toast.LENGTH_SHORT).show();
-//                intent = Intent(activity, ProfileFormActivity::class.java)
-//                startActivity(intent)
+//                Toast.makeText(activity, " open profile form $position", Toast.LENGTH_SHORT).show();
+                intent = Intent(activity, ProfileActivity::class.java)
+                startActivity(intent)
 
             }else{
                 Toast.makeText(activity, " click check box $position", Toast.LENGTH_SHORT).show();
@@ -100,8 +99,28 @@ class FragmentSettings: Fragment() {
                 val units = arrayOf("Metric(Kilometers)", "Imperial(Miles)")
 
                 dialogBuilder.setTitle("Unit Preference")
+
                 dialogBuilder.setSingleChoiceItems(units, -1) { dialogInterface, i ->
-//               Todo: save selected units[i] ----
+                    //Load comment data:
+                    val getSharedPreferences = requireContext().getSharedPreferences(fileName, Context.MODE_PRIVATE)
+//                    lateinit var radioButton: RadioButton
+                    if (getSharedPreferences.toString().equals("Metric(Kilometers)")){
+//                        //todo: set checkeditem = 0  ---- how??
+//                        radioButton.setChecked(true)
+                    }else if(getSharedPreferences.toString().equals("Imperial(Miles)")) {
+                        //todo: set checkeditem = 1  ---- how??
+//                        radioButton.setChecked(true)
+                    }
+
+                    //Save comment data:
+                    dialogBuilder.setPositiveButton("OK") { dialogInterface, i ->
+                        val setsharedPreferences = requireContext().getSharedPreferences(fileName, Context.MODE_PRIVATE)
+                        val editor: SharedPreferences.Editor = setsharedPreferences.edit()
+                        editor.apply {
+                            putString("unit_settings_key", units[i]) //--------
+                        }.apply()
+                    }
+
                     Toast.makeText(activity, " ${units[i]} selected", Toast.LENGTH_SHORT).show();
                     dialogInterface.dismiss()
                 }
@@ -109,15 +128,28 @@ class FragmentSettings: Fragment() {
                 dialogBuilder.show() //if these 2 dialog boxes share same builder object, will crashes here. //The specified child already has a parent. You must call removeView() on the child's parent first.
             }
 
-            else if(position == 1){ //comment --> text dialog
+            else if(position == 1){ //"Comments" --> text dialog
                 val dialogBuilder = AlertDialog.Builder(requireContext())
                 val inflater = layoutInflater
 
                 dialogBuilder.setTitle("Comment")
-                val commentDialogLayout = inflater.inflate(R.layout.comment_settings_dialog_box, null)
-                val editText: EditText? = commentDialogLayout.findViewById(R.id.commentEditSettings)
-                dialogBuilder.setView(commentDialogLayout)
-                dialogBuilder.setPositiveButton("OK") { dialogInterface, i -> }//save editText value
+                val commentDialogView = inflater.inflate(R.layout.comment_settings_dialog_box, null)
+                val commentEdit: EditText = commentDialogView.findViewById(R.id.commentEditSettings)
+                dialogBuilder.setView(commentDialogView)
+
+                //Load comment data:
+                val getSharedPreferences: SharedPreferences = requireContext().getSharedPreferences(fileName, Context.MODE_PRIVATE)
+                val sharedCommentValue : String? = getSharedPreferences.getString("comment_settings_key", null)
+                commentEdit.setText(sharedCommentValue)
+
+                //Save comment data:
+                dialogBuilder.setPositiveButton("OK") { dialogInterface, i ->
+                    val setsharedPreferences:SharedPreferences = requireContext().getSharedPreferences(fileName, Context.MODE_PRIVATE)
+                    val editor: SharedPreferences.Editor = setsharedPreferences.edit()
+                    editor.apply {
+                        putString("comment_settings_key", commentEdit.text.toString())
+                    }.apply()
+                }
                 dialogBuilder.setNegativeButton("Cancel") { dialogInterface, i -> dialogInterface.cancel()}
                 dialogBuilder.show()
             }
